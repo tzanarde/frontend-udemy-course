@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMl Semântico</title>
+
+    <!--
+        Podemos fazer uma comparação das tags semânticas com as tags div. Sempre que vemos uma tag
+        div no projeto, podemos pensar se não dá para substituir por uma tag semântica.
+        Obviamente nem sempre será possível, recomendado ou mesmo necessário, mas vale avaliar.
+    -->
+
+</head>
+<body>
+
+    <!-- HEADER -->
+    <!--
+        O header é o cabeçalho da página. Não necessariamente deve ficar no topo, mas na meioria das
+        vezes é o que faz mais sentido. Pode inclusive existir mais de um header por página.
+    -->
+    <header>
+        <h2>Nosso Site</h2>
+
+        <!-- NAV -->
+        <!--
+            Utilizado para demarcar blocos de navegação. Espera-se que existam links dentro desta tag.
+            Nem todo link precisa ficar dentro de uma nav, obviamente.
+
+            Geralmente são blocos grandes de link, como uma barra de navegação principal do site.
+        -->
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Produtos</a>
+            <a href="#">Contato</a>
+        </nav>
+        <!-- NAV -->
+
+    </header>
+    <!-- HEADER -->
+
+    <!-- MAIN -->
+    <!--
+        É a tag que contém a parte mais relevante da página, ou seja, o propósito da página.
+        Pode ser utilizada apenas uma tag main por página e seu conteúdo deve ser único e não
+        ser repetido ao longo da página. É comum que se coloque as sections dentro do main.
+    -->
+    <main>
+
+        <!-- SECTION -->
+        <!--
+            Define uma seção na página. Não existe uma regra correta para definir o que é uma seção,
+            deve-se levar em conta a página. Exmplos são: seção de produtos, seção de contatos, etc.
+
+            Geralmente é algo que será utilizado muitas vezes no projeto.
+
+            Com a sections agrupamos informações como containers e seções, organizando o site.
+        -->
+        <section>
+            <h2>Nossos produtos:</h2>
+            <p>Produto 1</p>
+            <p>Produto 2</p>
+            <p>Produto 3</p>
+        </section>
+        <section>
+            <h2>Nossos Diferenciais:</h2>
+            <ul>
+                <li>Deferencial 1</li>
+                <li>Deferencial 2</li>
+                <li>Deferencial 3</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Últimos posts do blog:</h2>
+
+            <!-- ARTICLE -->
+            <!--
+                Para utilizar a tag article corretamente, deve-se utilizar para conteúdos diferentes.
+                No caso de posts, produtos etc, sempre são coisas diferentes, portanto seu uso se encaixa
+                perfeitamente. Se o conteúdo for se repetir, não é interessante a tag article, é melhor
+                manter o uso de div.
+            -->
+            <article>
+                <h3>Post 1</h3>
+                <a href="#">Ler conteúdo</a>
+            </article>
+            <article>
+                <h3>Post 2</h3>
+                <a href="#">Ler conteúdo</a>
+            </article>
+            <article>
+                <h3>Post 3</h3>
+                <a href="#">Ler conteúdo</a>
+            </article>
+            <!-- ARTICLE -->
+
+        </section>
+        <!-- SECTION -->
+
+    </main>
+    <!-- MAIN -->
+
+    <!-- ASIDE -->
+    <!--
+        Utilizado para criar conteúdos ao lado do conteúdo principal. Não é o conteúdo principal da
+        página, mas é relacionado com o conteúdo principal. Podemos ter filtros e ordenação de
+        produtos quando produtos estão sendo exibidos na parte principal da página. Lembra uma seção.
+
+        Para ficar ao lado, entra o CSS.
+    -->
+    <aside>
+        <h4>Categorias:</h4>
+        <ul>
+            <li>Categoria 1</li>
+            <li>Categoria 2</li>
+            <li>Categoria 3</li>
+        </ul>
+    </aside>
+    <!-- ASIDE -->
+
+    <!-- MARK -->
+    <!--
+        É uma tag que deve substituir a tag span. Ela deve ser utilizada para colocar algum
+        conteúdo que deve estar em evidência para trazer importância para esse conteúdo.
+
+        Quando se quer grifar um texto mesmo, não tem necessidade do mark, o span já é o suficiente.
+        Mas para dar ênfase, o mark é mais aconselhável.
+    -->
+    <p>Temos neste texto um <mark>conteúdo importante</mark> que precisa ser marcado.</p>
+
+    <!-- FIGURE -->
+    <!--
+        Utilizada em conjunto com a tag figcaption.
+
+        Fig é o elemento pai e sua função é exibir alguma imagem na página. A imagem ainda é exibida pela tag img.
+
+        A tag figcaption serve para ser uma legenda para a imagem.
+    -->
+    <figure>
+        <img src="/img/img.JPG" alt="Montanhas" height="200px" width="200px">
+        <figcaption>Uma fotos de montanhas e o céu</figcaption>
+    </figure>
+    <!-- FIGURE -->
+
+    <!-- FOOTER -->
+    <footer>
+        <!--
+            O footer é o rodapé da página, geralmente colocado na parte de baixo da mesma.
+
+            Nesse caso dentro do footer, pode-se utilizar divs mesmo, já que está dentro do
+            footer, ou seja, não está deixando de ser semântico.
+        -->
+        <div>
+            <h2>Entre em contato:</h2>
+            <p>Telefone: (xx) xxxxx-xxxx</p>
+            <p>Email: teste@teste.com</p>
+        </div>
+        <p>All rights reserved</p>
+    </footer>
+    <!-- FOOTER -->
+
+</body>
+</html>
