@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Semântico</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+
+        <nav id=""navbar>
+            <!-- Div que não é semântica, apenas para propósitos de CSS. -->
+            <div id="navbar-inner">
+                <h2>Blog</h2>
+                <ul id="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <!--
+        Outra div que não é semântica, apenas para propósitos de CSS, nesse caso para criar
+        um respiro nas laterais da página.
+    -->
+    <div class="container">
+        <main id="posts-container">
+
+            <article class="post">
+                <img src="img/montanhas.JPG" alt="Montanhas e o céu">
+                <h3 class="title"><a href="#">Montanhas e o céu</a></h3>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique alias quae iusto nam voluptatum architecto! Quasi quibusdam exercitationem placeat, quis ut incidunt illum tempora, deleniti debitis recusandae, enim quaerat?</p>
+                <p class="author">Por: Tiago Zanarde</p>
+                <a href="#">Ler mais</a>
+            </article>
+
+            <article class="post">
+                <img src="img/neve.JPG" alt="Montanhas nevadas">
+                <h3 class="title"><a href="#">Montanhas nevadas</a></h3>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique alias quae iusto nam voluptatum architecto! Quasi quibusdam exercitationem placeat, quis ut incidunt illum tempora, deleniti debitis recusandae, enim quaerat?</p>
+                <p class="author">Por: Tiago Zanarde</p>
+                <a href="#">Ler mais</a>
+            </article>
+
+            <article class="post">
+                <img src="img/praia.jpeg" alt="Praia ensolarada">
+                <h3 class="title"><a href="#">Praia ensolarada</a></h3>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique alias quae iusto nam voluptatum architecto! Quasi quibusdam exercitationem placeat, quis ut incidunt illum tempora, deleniti debitis recusandae, enim quaerat?</p>
+                <p class="author">Por: Tiago Zanarde</p>
+                <a href="#">Ler mais</a>
+            </article>
+
+        </main>
+
+        <aside class="sidebar">
+
+            <section id="search-bar">
+                <h4>Busca</h4>
+                <form>
+                    <input type="text" placeholder="Pesquise no Blog">
+                    <input type="submit" value="Buscar">
+                </form>
+            </section>
+
+            <section id="categories">
+                <h4>Categorias</h4>
+                <nav>
+                    <ul>
+                        <li><a href="#">Paisagens</a></li>
+                        <li><a href="#">Cidades</a></li>
+                        <li><a href="#">Florestas</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section id="tags">
+                <h4>Tags</h4>
+                <div id="tags-container">
+                    <a href="#">Viagem Rápida</a>
+                    <a href="#">Europa</a>
+                    <a href="#">Brasil</a>
+                    <a href="#">Sol</a>
+                    <a href="#">Água</a>
+                </div>
+            </section>
+
+        </aside>
+    </div>
+
+    <footer>
+        <h2>Blog</h2>
+        <p>Os melhores registros de viagens</p>
+        <p>2023 - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>
